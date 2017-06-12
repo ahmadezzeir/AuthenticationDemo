@@ -1,0 +1,8 @@
+<h3>Login</h3>
+<div *ngIf="!isLoggedIn">
+    <button type="button" class="btn btn-primary" (click)="login()">Login via Azure AD</button>
+</div>
+
+<div *ngIf="isLoggedIn">
+    <button type="button" class="btn btn-danger"(click)="logout()">Logout</button>
+</div>
